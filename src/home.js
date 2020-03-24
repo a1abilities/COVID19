@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 export default function Home(){
     useEffect(()=> {
-      console.log("javascript executed");
         const script = document.createElement("script");
         script.src = "./static/assets/js/main.min.js";
         script.async = true;
