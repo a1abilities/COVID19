@@ -32,7 +32,7 @@ function Info() {
         <section class="section-one card section-margin">
           <div class="result">            
             <h1 class={score !== null && (score >= 0 && score <=5 ? "low" : score >= 6 && score <=12 ? "mid" : score >= 13 ? "high" : '')}>
-              {score !== null && (score >= 0 && score <=5 ? "Low" : score >= 6 && score <=10 ? "Medium" : score >= 11 ? "High" : '')}
+              {score !== null && (score >= 0 && score <=5 ? "Low" : score >= 6 && score <=12 ? "Medium" : score >= 13 ? "High" : '')}
               <p>Respiratory Illness</p>
             </h1>
             <div class="layout-align">
