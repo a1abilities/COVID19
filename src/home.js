@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Link } from 'react-router-dom';
 
 export default function Home(){
     useEffect(()=> {
@@ -10,6 +11,7 @@ export default function Home(){
 
     return(
         <div>
+          {/* <Link to='/info' id="infoLink">Info</Link> */}
               <div id="my-botui-app">
       <header class="header">
         <div class="container">
