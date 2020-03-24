@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function App() {
+function Info() {
   let url = new URL(window.location.href);
   var score = url.searchParams.get("score");
   // console.log(score);
@@ -31,7 +31,7 @@ function App() {
       <div class="container">
         <section class="section-one card section-margin">
           <div class="result">            
-            <h1 class={score !== null && (score >= 0 && score <=5 ? "low" : score >= 6 && score <=10 ? "mid" : score >= 11 ? "high" : '')}>
+            <h1 class={score !== null && (score >= 0 && score <=5 ? "low" : score >= 6 && score <=12 ? "mid" : score >= 13 ? "high" : '')}>
               {score !== null && (score >= 0 && score <=5 ? "Low" : score >= 6 && score <=10 ? "Medium" : score >= 11 ? "High" : '')}
               <p>Respiratory Illness</p>
             </h1>
@@ -39,7 +39,7 @@ function App() {
               <div id="score-meter-1" class="layout-align">
                 <div id="scorer-1-inner-div">
                   <div id="scorer-1-inner-div-5">
-                    <div class={score !== null && (score >= 0 && score <=5 ? "scorer-1-tick low" : score >= 6 && score <=10 ? "scorer-1-tick mid" : score >= 11 ? "scorer-1-tick high" : '')}></div>
+                    <div class={score !== null && (score >= 0 && score <=5 ? "scorer-1-tick low" : score >= 6 && score <=12 ? "scorer-1-tick mid" : score >= 13 ? "scorer-1-tick high" : '')}></div>
                   </div>
                 </div>
                 <div id="scorer-1-inner-div-2"></div>
@@ -75,7 +75,7 @@ function App() {
               </section>    
         }
 
-        { (score !== null &&  (score >= 6 && score <=10)) &&
+        { (score !== null &&  (score >= 6 && score <=12)) &&
             <section class="section-two card section-margin">
               <p>Based on your inputs, A1Abilities recommendations:</p>
               <ol>
@@ -98,7 +98,7 @@ function App() {
             </section>
         }
 
-        { (score !== null &&  (score >= 11)) &&
+        { (score !== null &&  (score >= 13)) &&
             <section class="section-two card section-margin">
               <p>Based on your inputs, A1Abilities recommendations:</p>
               <ol>
@@ -186,4 +186,4 @@ function App() {
   );
 }
 
-export default App;
+export default Info;
