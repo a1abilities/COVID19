@@ -33,7 +33,14 @@ function Info() {
           <div class="result">            
             <h1 class={score !== null && (score >= 0 && score <=5 ? "low" : score >= 6 && score <=12 ? "mid" : score >= 13 ? "high" : '')}>
               {score !== null && (score >= 0 && score <=5 ? "Low" : score >= 6 && score <=12 ? "Medium" : score >= 13 ? "High" : '')}
-              <p>Respiratory Illness</p>
+              {score !== null && 
+                  ( score >= 0 && score <=2 ? <p>May be stress related and observe.</p>
+                  : score >= 3 && score <=5 ? <p>Hydrate properly and proper personal hygine.<br />Observe and Re-evaluate after 2 days.</p>
+                  : score >= 6 && score <=12? <p>Seek a consultation with doctor.</p>
+                  : score >= 13 ? <p>Call the DOH Hotline 02-8-651-7800"</p>
+                  : '')
+              }
+              
             </h1>
             <div class="layout-align">
               <div id="score-meter-1" class="layout-align">
@@ -120,14 +127,10 @@ function Info() {
           <h3>Prevention and Precautions - Basic protective measures</h3>
           <p>
             Be aware or Educate yourself with the latest updates on the
-            following websites :
-            <a
-              href="https://www.who.int/health-topics/coronavirus"
-              target="_blank"
-              >WHO
-            </a>
-            &
-            <a href="https://www.mohfw.gov.in/" target="_blank"> MoHFW</a>
+            following websites : 
+            <a href="https://www.who.int/health-topics/coronavirus" target="_blank" >WHO </a>&
+            <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert" target="_blank"> Department of Health - Australia</a>&
+            <a href="https://www.healthdirect.gov.au/" target="_blank"> Health Direct</a>
           </p>
           <p>
             Most people who become infected experience mild illness and recover,
