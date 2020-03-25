@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Link } from 'react-router-dom';
+
 
 export default function Home(){
     useEffect(()=> {
@@ -34,8 +34,8 @@ export default function Home(){
       </header>
      <main>
         <div class="container">
-          <bot-ui></bot-ui>
-          <button onclick="reset()" class="reset">
+          <bot-ui> </bot-ui>
+          <button onClick="reset()" class="reset">
             <i class="fa fa-undo"></i>
           </button>
         </div>
@@ -47,8 +47,7 @@ export default function Home(){
         width="50px"
         height="50px"
         viewBox="0 0 50 50"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        xmlns="http://www.w3.org/2000/svg">
         <circle
           class="circle"
           fill="none"
