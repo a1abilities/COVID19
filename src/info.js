@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Info() {
+function Info(props) {
   let url = new URL(window.location.href);
   var score = url.searchParams.get("score");
   // console.log(score);
@@ -17,7 +17,7 @@ function Info() {
             class="logo"
           />
         </a>
-        <h1>COVID Risk Result</h1>
+        <h1>COVID-19  Risk Result</h1>
         <a href="https://a1abilities.co.nz" target="_blank" class="fake">
           <img
             src="./static/assets/images/A1AbilitiesLogo.jpeg"
@@ -56,7 +56,8 @@ function Info() {
             </div>
           </div>
         </section>
-        
+       
+
         {(score !== null && (score >= 0 && score <=5)) &&
                 <section class="section-two card section-margin">
                 <p>Based on your inputs, A1Abilities advises the following:</p>
@@ -128,7 +129,7 @@ function Info() {
           <p>
             Be aware or Educate yourself with the latest updates on the
             following websites : 
-            <a href="https://www.who.int/health-topics/coronavirus" target="_blank" >WHO </a> &nbsp; &
+            <a href="https://www.who.int/health-topics/coronavirus" target="_blank" >WHO </a> &
             <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert" target="_blank"> Department of Health - Australia</a>&
             <a href="https://www.healthdirect.gov.au/" target="_blank"> Health Direct</a>
           </p>
@@ -182,6 +183,11 @@ function Info() {
               </p>
             </li>
           </ul>
+         
+        <button  onClick={props.history.push('/')}>
+        <i class="fas fa-arrow-left"></i>
+          </button>
+
         </section>
       </div>
     </main>

@@ -14,7 +14,7 @@ function App() {
        <Suspense fallback={<div></div>}>
           <Switch>
             <Route exact path="/"       render = { props => {return <Home /> }} />
-            <Route exact path="/info"   render = { props => {return <Info /> }} />
+            <Route exact path="/info"   render = { props => {return <Info {...props}/> }} />
           </Switch>
       </Suspense>
     </Router>
