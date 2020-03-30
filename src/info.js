@@ -63,7 +63,7 @@ function Info() {
                 <ol>
                   <li>Stay home and take care of yourself in home isolation</li>
                   <li> Prevention and precautions
-                    <a href="#details" class="link">See Below</a>
+                    <a href="#details" class="link"> &nbsp;See Below</a>
                   </li>
                   <li>
                     Laboratory tests and imaging are optional
@@ -89,7 +89,7 @@ function Info() {
                 <li>CONSULT A PHYSICIAN and start home isolation immediately</li>
                 <li>
                   Prevention and precautions
-                  <a href="#details" class="link">See Below</a>
+                  <a href="#details" class="link"> &nbsp;See Below</a>
                 </li>
                 <li>
                   Laboratory tests and imaging may be needed as per your physician’s advise              
@@ -114,7 +114,7 @@ function Info() {
                 <li>COVID 19 testing may be needed at your physician’s advise</li>
                 <li>
                   Prevention and precautions
-                  <a href="#details" class="link">See Below</a>
+                  <a href="#details" class="link">&nbsp; See Below</a>
                 </li>
                 <li> Laboratory tests and imaging may be needed as per your physician's advise </li>
                 <li> Monitor your symptoms and isolate yourself </li>
@@ -128,7 +128,7 @@ function Info() {
           <p>
             Be aware or Educate yourself with the latest updates on the
             following websites : 
-            <a href="https://www.who.int/health-topics/coronavirus" target="_blank" >WHO </a>&
+            <a href="https://www.who.int/health-topics/coronavirus" target="_blank" >WHO </a> &nbsp; &
             <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert" target="_blank"> Department of Health - Australia</a>&
             <a href="https://www.healthdirect.gov.au/" target="_blank"> Health Direct</a>
           </p>

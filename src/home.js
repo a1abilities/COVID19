@@ -10,6 +10,7 @@ export default function Home(){
     },[]);
 
     return(
+     
         <div>
           {/* <Link to='/info' id="infoLink">Info</Link> */}
               <div id="my-botui-app">
@@ -38,6 +39,11 @@ export default function Home(){
           <button onClick="reset()" class="reset">
             <i class="fa fa-undo"></i>
           </button>
+          <button
+        className="button icon-left"
+        onClick={this.context.router.history.goBack}>
+          Back
+      </button>
         </div>
       </main>
     </div>
